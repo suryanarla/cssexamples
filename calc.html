@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* calc()
+        perform math operations( + - * )
+        mix and match value*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            color: white;
+            font-size: 3rem;
+            background: blue;
+            height: 100px;
+        }
+
+        .banner{
+            background: orangered;
+            /* here scrollable will be there */
+            min-height: 100vh;
+            /* here scrollable will not there why
+            because we removed height100px */
+            min-height: calc(100vh - 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        this is navbar
+    </div>
+    <div class="banner">
+        this is banner
+    </div>
+</body>
+</html>

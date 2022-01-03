@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul li{
+            list-style-type: lower-alpha;
+            list-style-type:armenian;
+        }
+
+        /* Block - Top bottom margin respected
+        Inline -Top bottom margin not respected
+        mobile - navbar
+        list-style-type:property
+        descendent selector */
+        ul li a{
+            /* text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            background: brown;
+            color: white; */
+            /* block elements having margin-left,margin-right,padding-left,padding-right*/
+            /* inline elements  margin top and bottom will not work*/
+            /* padding: 4px 8px; */
+
+            /* here margin 8px will not work untill we can convert into  block element */
+            /* margin: 6px 8px; */
+            /* display: block;
+            margin: 6px 8px; */
+
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            background: brown;
+            color: white;
+            display: inline-block;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about us</a></li>
+        <li><a href="">contact us</a></li>
+        <li><a href="">products</a></li>
+        <li><a href="">home</a></li>
+    </ul>
+    
+</body>
+</html>

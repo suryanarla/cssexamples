@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* last rule */
+        h1{
+            color: red;
+        }
+        h1{
+            color: blue;
+        }
+        /* in these situation last css will be applied */
+
+        /* Specificity id>class>element seector>universal selector*/
+        .oneclass{
+            color:green;
+        }
+        #oneid{
+            color: indigo;
+        }
+
+        /* my example */
+
+        p{
+            background-color: skyblue;
+        }
+        .prag{
+            background-color: slategrey;
+        }
+        #pragid{
+            background-color: tomato;
+        }
+
+        /* last specifity of universal selector */
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>This is one</h1>
+    <h1 class="oneclass">This is two</h1>
+    <h1 id="oneid">This is there</h1>
+
+   <!-- my example -->
+    <p class="prag" id="pragid">paragraph data</p>
+</body>
+</html>
